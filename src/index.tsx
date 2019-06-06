@@ -1,6 +1,7 @@
 import React, { useRef, useLayoutEffect } from "react";
 import ReactDOM from "react-dom";
 import { useDraggable } from "./use-draggable";
+import "pepjs";
 import "./styles.css";
 
 function App() {
@@ -36,6 +37,7 @@ function DraggableComponent() {
   return (
     <div
       ref={draggableDivRef}
+      touch-action="none"
       style={{ userSelect: "none", padding: "8px", backgroundColor: "#eee" }}
     >
       drag me
